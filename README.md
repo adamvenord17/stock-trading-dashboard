@@ -17,6 +17,22 @@ Stock Trading Dashboard is a simple front end dashboard for the free trading pla
 ## DISCLAIMER
 I am not affiliated with Robinhood or its associates. I am in no way responsible for any losses incurred through using this code or application. This app relies on the private API as found [here](https://github.com/sanko/Robinhood) (special thanks to sanko for providing documentation). It isn't recommended to use this since the API is private and can change unexpectedly at any time, and is not officially supported. Using any kind of unpublished API for investing is risky, and you should thoroughly review any code involving any kind of money or investment published on the web to ensure the creator isn't doing something malicious. It's your money, after all. Your safest bet is to use the sanctioned phone app. Having said that, creating this app has been a lot of fun and I use it a lot more than I use the phone app.
 
+## Usage
+This repository comes with a Dockerfile to easily set up a server with minimal configuration. To build the image, run:
+
+```shell
+$ git clone https://github.com/adamvenord17/stock-trading-dashboard.git
+$ cd stock-trading-dashboard
+$ docker build --tag stock-trading-dashboard .
+```
+
+Then you can run the server:
+```shell
+$ docker run --rm -dt -p 3000:3000 stock-trading-dashboard
+```
+
+This will run the server on your host-machine's port 3000.
+
 ## Installation
 This is a basic Rails project. You can install Ruby on Rails (and RVM) by visiting [the RVM install page](https://rvm.io/rvm/install). If you already have ruby on rails set up, simply clone this project. Then run the basic steps to run the project like you would any other rails project:
 * `bundle install`
