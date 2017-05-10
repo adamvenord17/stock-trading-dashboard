@@ -60,7 +60,7 @@ $ docker build --tag stock-trading-dashboard .
 
 Then you can run the server:
 ```shell
-$ docker run --rm -dt -p 3000:3000 stock-trading-dashboard
+$ docker run -dt -p 3000:3000 stock-trading-dashboard
 ```
 
 This will run the server on your host-machine's port 3000.
