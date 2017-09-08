@@ -1,5 +1,5 @@
 # Stock Trading Dashboard
-Stock Trading Dashboard is a simple front end dashboard for the free stock trading platform [Robinhood](https://robinhood.com/referral/benjamc331/). You're presented with your autorefreshing portfolio after logging in: (more [screenshots here](http://imgur.com/a/qkhhb).)
+Stock Trading Dashboard is a simple front end dashboard for the free stock trading platform [Robinhood](https://robinhood.com/referral/benjamc331/). Users can buy, sell, and research stocks, all for no charge. You're presented with your autorefreshing portfolio after logging in: (more [screenshots here](http://imgur.com/a/qkhhb).)
 ![image](http://imgur.com/D7cGygL.png)
 
 ## DISCLAIMER
