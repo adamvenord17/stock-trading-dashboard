@@ -1,15 +1,10 @@
 FROM ruby:2.2.2
 
-WORKDIR $HOME/
+ADD . $HOME/stock-trading-dashboard
+WORKDIR $HOME/stock-trading-dashboard
 
-RUN git clone https://github.com/adamvenord17/stock-trading-dashboard.git
-RUN cd stock-trading-dashboard
-
-
-COPY Gemfile* $HOME/
 RUN bundle install
 
-ADD . $HOME
 RUN bundle exec rake db:create db:migrate
 
 #CMD ["bundle", "exec", "rails", "server"]
